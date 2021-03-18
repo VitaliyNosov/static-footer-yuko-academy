@@ -13,20 +13,28 @@ ul {
   padding: 0px !important;
 }
 
-.menu-content {
-  width: 100%;
-  padding: 20px 0px 20px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.logo-block {
+  margin: 25px 0px 25px 0px;
 }
 
 .logo-block img {
   max-width: 200px;
   min-height: 45px;
+}
+
+.custom-nav-link {
+  display: block;
+  padding: 35px 80px 0px 0px;
+  font-size: 17px;
+}
+
+.menu-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .menu-navigation ul {
@@ -41,7 +49,7 @@ ul {
 }
 
 .menu-navigation ul li a:hover {
-  color: #FF151F;
+  color: #A3A3A3;
   cursor: pointer;
 }
 
@@ -135,6 +143,18 @@ ul {
   margin-right: 3px;
 }
 
+@media (max-width: 1200px) {
+  .custom-nav-link {
+    display: block;
+    padding: 20px 58px 20px 0px;
+    font-size: 16px;
+  }
+  .btn {
+    font-size: 10px !important;
+    padding: 12px !important;
+  }
+}
+
 @media (max-width: 992px) {
   .footer-info-block {
     display: -webkit-box;
@@ -151,16 +171,6 @@ ul {
     display: -ms-flexbox;
     display: flex;
   }
-  .menu-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .menu-navigation {
     margin: 0 auto;
   }
@@ -168,32 +178,32 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
   .logo-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     margin-bottom: 50px;
   }
-  p {
+  .location-block p {
     font-size: 12px;
     color: #E0E0E0;
   }
-  p i {
+  .location-block p i {
     color: #FF151F;
     margin-right: 5px;
   }
-}
-
-.contact-block p {
-  font-size: 12px;
-  color: #E0E0E0;
-}
-
-.contact-block p i {
-  color: #FF151F;
-  margin-right: 5px;
+  .contact-block p {
+    font-size: 12px;
+    color: #E0E0E0;
+  }
+  .contact-block i {
+    color: #FF151F;
+    margin-right: 5px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -211,16 +221,6 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-  }
-  .menu-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
   .menu-navigation {
     width: 100%;
