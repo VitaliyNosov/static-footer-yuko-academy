@@ -241,6 +241,9 @@ ul {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .custom-nav-link {
+    padding: 20px 40px 20px 70px;
+  }
   .logo-block {
     width: 100%;
     display: -webkit-box;
